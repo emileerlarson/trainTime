@@ -58,10 +58,10 @@
       var frequencyNew = $('<td>');
       var minNew = $('<td>');
 
-      var tFrequency = moment(frequency, "minutes");
+      var tFrequency = snapshot.val().frequency;
       console.log(tFrequency)
     
-      var firstTime = moment(firstTrainTime, "hmm").format("HH:mm");
+      var firstTime = snapshot.val().firstTrainTime;
       console.log(firstTrainTime)
     
       var firstTimeConverted = moment(firstTime, "hh:mm").subtract(1, "years");
