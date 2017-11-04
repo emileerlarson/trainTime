@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+	<div class="jumbotron">
+		<h1 style="text-align: center;">Train Schedule</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="jumbotron">
+		<h2>Current Train Schedule</h2>          
+		  <table class="table table-striped">
+		    <thead>
+		      <tr>
+		        <th>Train Name</th>
+		        <th>Destination</th>
+		        <th>Fequency</th>
+		        <th>Next Arival</th>
+		        <th>Min Away</th>
+		      </tr>
+		    </thead>
+		    <tbody id="newData">
+		    	
+		    </tbody>
+		  </table>
+	</div>
+</div>
+<div class="row">
+	<div class="jumbotron">
+		<form>
+		 <h2>Add Train</h2>	
+		  <div class="form-group">
+		    <label for="trainName">Train Name</label>
+		    <input type="trainName" class="form-control" id="name-input">
+		  </div>
+		  <div class="form-group">
+		    <label for="pwd">Destination</label>
+		    <input type="destination" class="form-control" id="destination-input">
+		  </div>
+		  <div>
+		  	<label for="firstTime">First Train Time</label>
+		  	<input type="firstTime" class="form-control" id="firstTrainTime-input">
+		  </div>
+		  <div>
+		  	<label for="frequency">Frequency</label>
+		  	<input type="frequency" class="form-control" id="frequency-input">
+		  </div>	
+		  <button type="submit" class="btn btn-default" id="submit">Submit</button>
+		</form>
+	</div>
+</div>	
+</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>	
+	<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <!-- Script -->
+    <script src="assets/javascript.js"></script>
+</body>
+</html>
